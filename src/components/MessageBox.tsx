@@ -1,24 +1,28 @@
 import { FieldValues, SubmitHandler, useForm } from "react-hook-form";
 
 const MessageBox = () => {
-  const { register, handleSubmit, formState } = useForm();
+  const { register, handleSubmit, formState, reset } = useForm();
   const { errors } = formState;
 
   const handleMessageSubmit: SubmitHandler<FieldValues> = async (data) => {
     try {
-      await fetch("https://formsubmit.co/6e226e2da93400ae5842f7e74f92893e", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
+      await fetch(
+        "https://formsubmit.co/ajax/6e226e2da93400ae5842f7e74f92893e",
+        {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify({
+            email: data.email,
+            message: data.message,
+          }),
         },
-        body: JSON.stringify({
-          email: data.email,
-          message: data.message,
-        }),
-      });
+      );
     } catch (error) {
       console.log(error);
     }
+    reset();
   };
 
   return (

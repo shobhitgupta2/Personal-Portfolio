@@ -6,6 +6,7 @@ import CornerBubble from "../components/CornerBubble.tsx";
 import About from "../components/About.tsx";
 import Contact from "../components/Contact.tsx";
 import { useRef } from "react";
+import Footer from "../components/Footer.tsx";
 
 const PortfolioPage = () => {
   const pageTop = useRef<HTMLDivElement | null>(null);
@@ -33,15 +34,18 @@ const PortfolioPage = () => {
     }
   };
   return (
-    <div className="h-screen overflow-y-auto bg-gradient-to-r from-zinc-800 to-stone-900 block">
-      <NavBar ref={pageTop} onClick={onNavClick} />
-      <Intro />
-      <Skills ref={skillsSection} />
-      <Experience ref={experienceSection} />
-      <CornerBubble handleClick={scrollToTopClick} />
-      <About ref={aboutSection} />
-      <Contact ref={contactSection} />
-    </div>
+    <>
+      <div className="h-screen overflow-y-auto bg-gradient-to-r from-zinc-800 to-stone-900 block flex-grow">
+        <NavBar ref={pageTop} onClick={onNavClick} />
+        <Intro />
+        <Skills ref={skillsSection} />
+        <Experience ref={experienceSection} />
+        <CornerBubble handleClick={scrollToTopClick} />
+        <About ref={aboutSection} />
+        <Contact ref={contactSection} />
+        <Footer />
+      </div>
+    </>
   );
 };
 

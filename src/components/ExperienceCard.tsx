@@ -11,9 +11,13 @@ const ExperienceCard = () => {
         @ Veersa Technologies
       </h2>
       <p className="text-lg font-mono text-gray-500 mt-3">
-        - Worked on B2B web application for a major US-based healthcare provider
+        - Worked on an entity management tool as part of a custom CRM that
+        handles entities with dynamic relationships.
       </p>
-      <p className="text-lg font-mono text-gray-500 mt-3">- </p>
+      <p className="text-lg font-mono text-gray-500 mt-3">
+        - Improved visual and technical consistency between different pages of
+        the tool by replacing individual components with reusable ones.
+      </p>
     </div>
   );
 };
