@@ -40,10 +40,10 @@ const PortfolioPage = () => {
         <Intro />
         <Skills ref={skillsSection} />
         <Experience ref={experienceSection} />
-        <CornerBubble handleClick={scrollToTopClick} />
         <About ref={aboutSection} />
         <Contact ref={contactSection} />
         <Footer />
+        <CornerBubble handleClick={scrollToTopClick} />
       </div>
     </>
   );
