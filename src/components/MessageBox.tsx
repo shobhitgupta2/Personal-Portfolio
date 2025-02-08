@@ -1,4 +1,5 @@
 import { FieldValues, SubmitHandler, useForm } from "react-hook-form";
+import toast from "react-hot-toast";
 
 const MessageBox = () => {
   const { register, handleSubmit, formState, reset } = useForm();
@@ -6,7 +7,7 @@ const MessageBox = () => {
 
   const handleMessageSubmit: SubmitHandler<FieldValues> = async (data) => {
     try {
-      await fetch(
+      const response = await fetch(
         "https://formsubmit.co/ajax/6e226e2da93400ae5842f7e74f92893e",
         {
           method: "POST",
@@ -19,10 +20,13 @@ const MessageBox = () => {
           }),
         },
       );
+      if (response.ok) {
+        reset();
+        toast.success("Message successfully sent!");
+      }
     } catch (error) {
-      console.log(error);
+      toast.error("Failed to send Message!");
     }
-    reset();
   };
 
   return (

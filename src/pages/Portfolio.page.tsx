@@ -7,6 +7,7 @@ import About from "../components/About.tsx";
 import Contact from "../components/Contact.tsx";
 import { useRef } from "react";
 import Footer from "../components/Footer.tsx";
+import { Toaster } from "react-hot-toast";
 
 const PortfolioPage = () => {
   const pageTop = useRef<HTMLDivElement | null>(null);
@@ -44,6 +45,7 @@ const PortfolioPage = () => {
         <Contact ref={contactSection} />
         <Footer />
         <CornerBubble handleClick={scrollToTopClick} />
+        <Toaster position="bottom-center" />
       </div>
     </>
   );
