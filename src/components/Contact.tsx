@@ -6,7 +6,7 @@ const Contact = forwardRef<HTMLDivElement | null>(({}, ref) => {
   return (
     <div
       ref={ref}
-      className="w-full h-full flex-col mt-20 items-center content-center"
+      className="w-full min-h-full flex-col mt-20 items-center content-center"
     >
       <h2 className="text-center w-full xl:text-7xl text-5xl font-[courier] text-green-400 mb-12">
         Contact
