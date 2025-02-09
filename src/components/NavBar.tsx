@@ -10,7 +10,7 @@ const NavBar = forwardRef<HTMLDivElement | null, NavBarProps>(
     return (
       <nav
         ref={ref}
-        className="w-full h-auto flex md:justify-end justify-center text-gray-500 md:text-xl text-md md:gap-8 gap-4 lg:pr-4 md:pr-2"
+        className="w-full h-auto flex md:justify-end justify-center text-gray-500 md:text-xl text-sm md:gap-8 gap-4 lg:pr-4 md:pr-2 pr-0"
       >
         <NavButton
           text="Skills"
