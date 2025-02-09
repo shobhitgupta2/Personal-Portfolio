@@ -9,7 +9,7 @@ const About = forwardRef<HTMLDivElement | null>(({}, ref) => {
       <h2 className="text-center w-full xl:text-7xl lg:text-5xl text-4xl font-[courier] text-green-400 mb-12">
         About me
       </h2>
-      <h3 className="text-left w-full xl:px-20 lg:px-16 px-10 xl:text-4xl lg:text-3xl sm:text-2xl text-xl text-gray-200 font-mono">
+      <h3 className="text-left w-full xl:px-20 lg:px-16 px-10 xl:text-4xl lg:text-3xl text-2xl text-gray-200 font-mono">
         Why web development?
       </h3>
       <p
@@ -22,7 +22,7 @@ const About = forwardRef<HTMLDivElement | null>(({}, ref) => {
         figured it would be best to start my career in something that I can
         contribute to more than on a technical basis.
       </p>
-      <h3 className="text-left w-full xl:px-20 lg:px-16 px-10 xl:text-4xl lg:text-3xl sm:text-2xl text-xl text-gray-200 font-mono">
+      <h3 className="text-left w-full xl:px-20 lg:px-16 px-10 xl:text-4xl lg:text-3xl text-2xl text-gray-200 font-mono">
         What keeps me going?
       </h3>
       <p
@@ -34,7 +34,7 @@ const About = forwardRef<HTMLDivElement | null>(({}, ref) => {
         <span className="text-green-400"> caffeine</span>. Lots of it (comes
         with the B.Tech degree).
       </p>
-      <h3 className="text-left w-full xl:px-20 lg:px-16 px-10 xl:text-4xl lg:text-3xl sm:text-2xl text-xl text-gray-200 font-mono">
+      <h3 className="text-left w-full xl:px-20 lg:px-16 px-10 xl:text-4xl lg:text-3xl text-2xl text-gray-200 font-mono">
         Why would I be a great fit at your venture?
       </h3>
       <p
