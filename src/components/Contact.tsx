@@ -8,7 +8,7 @@ const Contact = forwardRef<HTMLDivElement | null>(({}, ref) => {
       ref={ref}
       className="w-full h-full flex-col mt-20 items-center content-center"
     >
-      <h2 className="text-center w-full text-7xl font-[courier] text-green-400 mb-12">
+      <h2 className="text-center w-full xl:text-7xl text-5xl font-[courier] text-green-400 mb-12">
         Contact
       </h2>
       <h2 className="text-center w-full text-4xl font-[courier] text-neutral-400 mb-12">
