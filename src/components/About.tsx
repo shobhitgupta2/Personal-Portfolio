@@ -6,7 +6,7 @@ const About = forwardRef<HTMLDivElement | null>(({}, ref) => {
       ref={ref}
       className="w-full min-h-screen relative mt-20 flex-col content-center"
     >
-      <h2 className="text-center w-full xl:text-7xl lg:text-5xl text-4xl font-[courier] text-green-400 mb-12">
+      <h2 className="text-center w-full xl:text-7xl text-5xl font-[courier] text-green-400 mb-12">
         About me
       </h2>
       <h3 className="text-left w-full xl:px-20 lg:px-16 px-10 xl:text-4xl lg:text-3xl text-2xl text-gray-200 font-mono">
