@@ -16,11 +16,12 @@ const TechArray = () => {
   ];
 
   return (
-    <div className="grid xl:grid-cols-3 lg:grid-cols-2 sm:grid-cols-1 gap-0 w-3/4 justify-self-center min-h-1/3 justify-items-center">
+    <div className="grid grid-cols-3 gap-0 w-3/4 justify-self-center min-h-1/3 justify-items-center">
       {frontendLogos.map((Logo, index) => (
         <div
           key={index}
-          className="w-56 h-56 my-10 p-4 rounded-xl
+          className="2xl:w-56 2xl:h-56 lg:w-48 lg:h-48 sm:w-36 sm:h-36 w-24 h-24
+          my-10 xl:p-4 md:p-2 p-1 rounded-xl
         flex items-center justify-center
         grayscale hover:grayscale-0
         border-2 border-stone-800 shadow-2xl shadow-neutral-800 hover:shadow-neutral-700
