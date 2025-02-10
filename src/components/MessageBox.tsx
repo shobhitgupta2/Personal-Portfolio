@@ -31,7 +31,7 @@ const MessageBox = () => {
 
   return (
     <form
-      className="h-4/5 w-1/3 rounded-2xl bg-zinc-900 flex flex-col py-6 items-center gap-4"
+      className="h-4/5 lg:w-1/3 md:w-1/2 w-3/4 rounded-2xl bg-zinc-900 flex flex-col py-6 items-center gap-4"
       onSubmit={handleSubmit(handleMessageSubmit)}
     >
       <input
@@ -47,7 +47,7 @@ const MessageBox = () => {
           focus:border-green-500 outline-none transition ease-in-out duration-300"
         placeholder="Enter your email"
       />
-      <p className="pl-2 -mt-2 text-red-400 text-md w-11/12 h-14">
+      <p className="pl-2 -mt-2 text-red-400 lg:text-md text-sm w-11/12 h-7">
         {errors.email ? (errors.email.message as string) : " "}
       </p>
 
@@ -55,12 +55,12 @@ const MessageBox = () => {
         {...register("message", {
           required: "Please enter a message",
         })}
-        className="bg-stone-800 h-4/5 w-11/12 rounded-2xl self-center outline-none p-4 text-neutral-300
+        className="bg-stone-800 h-40 w-11/12 rounded-2xl self-center outline-none p-4 text-neutral-300
         border-2 border-transparent border-b-green-500 focus:border-green-500 transition ease-in-out duration-300 resize-none
         overflow-y-hidden"
         placeholder="Enter your message"
       />
-      <p className="pl-2 -mt-2 text-red-400 text-md w-11/12 h-14">
+      <p className="pl-2 -mt-2 text-red-400 text-md w-11/12 h-7">
         {errors.message ? (errors.message.message as string) : " "}
       </p>
       <button
