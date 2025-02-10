@@ -14,7 +14,7 @@ const Contact = forwardRef<HTMLDivElement | null>(({}, ref) => {
       <h2 className="text-center w-3/4 justify-self-center xl:text-5xl md:text-3xl text-2xl font-[courier] text-neutral-400 mb-12">
         Up for a chat? I'd love to discuss opportunities!
       </h2>
-      <div className="w-full h-4/5 flex lg:flex-row flex-col-reverse justify-items-start items-center lg:items-start lg:justify-center lg:gap-x-24 gap-y-6">
+      <div className="w-full h-4/5 flex lg:flex-row flex-col-reverse justify-items-start items-center lg:items-start lg:justify-center lg:gap-x-24 gap-y-6 my-12">
         <MessageBox />
         <SocialsContainer />
       </div>
