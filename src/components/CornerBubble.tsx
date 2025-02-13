@@ -9,7 +9,7 @@ const CornerBubble = ({ handleClick }: CornerButtonProps) => {
     <button
       className="w-12 h-12 bg-green-500 rounded-2xl
     fixed bottom-4 md:right-9 right-4
-    justify-items-center items-center
+    flex justify-center items-center
     hover:bg-green-400 hover:text-white hover:shadow-green-500
     transition ease-in-out duration-300
     shadow-sm shadow-green-400"
